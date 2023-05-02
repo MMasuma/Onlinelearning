@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 
-body{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.fa-bars{
+.fa-bars {
     display: none;
 }
 
@@ -102,7 +102,7 @@ body{
     display: block;
 }
 
-.sign_in{
+.sign_in {
     float: left;
     font-size: 16px;
     font-family: DM Sans, sans-serif;
@@ -113,6 +113,7 @@ body{
 
     border: none;
     background-color: #fff;
+    cursor: pointer;
 }
 
 .sign_up {
@@ -126,42 +127,45 @@ body{
     border: none;
     border-radius: 4px;
     background-color: #086CF9;
+    cursor: pointer;
 }
 
-.grad1{
+.grad1 {
     width: 100%;
     min-height: 740px;
     background-image: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(../images/pexels-ivan-samkov-5676744\ 1.png);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
-.text{
+.text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.text h1{
+.text h1 {
     text-align: center;
     font-size: 56px;
     font-family: DM Sans, sans-serif;
     color: #fff;
 }
 
-.text p{
+.text p {
+    width: 70%;
     text-align: center;
     font-size: 16px;
     font-family: DM Sans, sans-serif;
     color: #fff;
 }
 
-.start{
+.start {
     margin-top: 54px;
     width: 167px;
     font-size: 16px;
@@ -175,14 +179,14 @@ body{
     background-color: #086CF9;
 }
 
-.info{
+.info {
     margin: -100px auto 0;
     width: 80%;
     min-height: 192px;
     padding: 56px 0;
     min-height: 192px;
     background-color: #fff;
-    box-shadow: 0 11px 35px rgba(0,0,0,0.2);
+    box-shadow: 0 11px 35px rgba(0, 0, 0, 0.2);
 
     display: flex;
     flex-direction: row;
@@ -191,39 +195,97 @@ body{
     flex-wrap: wrap;
 }
 
-.card{
+.card {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.card h3{
+.card h3 {
     padding: 0;
     font-size: 36px;
     font-family: DM Sans, sans-serif;
 }
 
-.card p{
-    padding: 0;
+.card p {
+    margin-top: -25px;
     font-size: 16px;
     font-family: DM Sans, sans-serif;
     color: #086CF9;
 }
 
-.card_info{
+.card_info {
     padding: 0 24px;
+}
+
+.card img {
+    width: 72px;
+    height: 72px;
+}
+
+.about {
+    padding: 128px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about_text {
+    padding: 30px;
+    width: 45%;
+}
+
+.about_text h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+    color: #222222;
+}
+
+.about_text p {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #555555;
+}
+
+.about_text h4 {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #333333;
+}
+
+.about_image {
+    position: relative;
+}
+
+.play{
+    position: absolute;
+    top: 172px;
+    left: 258px;
+    z-index: 10;
+    cursor: pointer;
 }
 
 
 
 
-@media only screen and (max-width: 830px){
-    .fa-bars{
+@media only screen and (max-width: 830px) {
+    .fa-bars {
         float: right;
         padding: 10px;
         margin: 40px 10px;
-        width: 40px;
-        height: 40px;
+        width: 60px;
+        height: 60px;
         display: block;
     }
 }
